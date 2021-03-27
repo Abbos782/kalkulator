@@ -8,16 +8,20 @@
 
 .kalkulyator__box {
   margin: 0 auto;
+  margin-top: 200px;
   text-align: center;
   border: 1px solid #484881;
   width: 350px;
-  height: 400px;
+  height: 420px;
   background-color: #050650;
+  border-radius: 10px;
 }
 
 .kalkulyator__box .input {
   width: 100%;
   height: 20%;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .kalkulyator__box .table {
@@ -26,10 +30,22 @@
 
 .kalkulyator__box .table tr td {
   width: 25%;
-  height: 60px;
+  height: 65px;
   font-size: 30px;
   color: #fff;
   font-weight: bold;
   background-color: #484881;
+}
+
+.kalkulyator__box .table tr td:hover {
+  background-color: #071561;
+}
+
+.kalkulyator__box .table tr .tdcolor {
+  background-color: #ee9609;
+}
+
+.kalkulyator__box .table tr .tdcolor:hover {
+  background-color: #b31414;
 }
 /*# sourceMappingURL=main.css.map */
