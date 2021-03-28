@@ -1,26 +1,17 @@
-  let ekranElement  = document.querySelector(".input")
-
-let ValueElement = document.querySelectorAll('td')
-
-document.querySelectorAll('td').forEach(function(td){
-  td.addEventListener('click',function(e){
-   
-     let qiymat = e.target.innerText;
-     
-    
-     if(qiymat == "AC"){
-         ekranElement.value =""
-     }else if(qiymat == "="){
-         ekranElement.value = eval(ekranElement.value)
-
-     }
-     else{
-        ekranElement.value  += qiymat
-      }
-     
-      
-
+let inputElemnt = document.querySelector(".input")
+function tugma(obj){
+  let sum = obj.innerText;
   
-     
-  })
-})
+  if(sum =="="){
+    inputElemnt.innerHTML =eval(inputElemnt.innerHTML);
+  }else if(sum =="AC"){
+    inputElemnt.innerHTML =""
+  }else{
+    if(inputElemnt.innerHTML=="0"){
+      inputElemnt.innerHTML=sum;
+    }else{
+      inputElemnt.innerHTML+=sum;
+    }
+  }
+  
+}
