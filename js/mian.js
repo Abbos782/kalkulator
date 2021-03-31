@@ -10,10 +10,10 @@ function tugma(obj){
   
   if(sum =="="){
     inputElemnt.innerHTML =eval(inputElemnt.innerHTML);
-  
+  temp=false;
   }else if(sum =="AC"){
     inputElemnt.innerHTML =""
-  
+    temp=false;
   }else{
     if(inputElemnt.innerHTML == "0"){
       inputElemnt.innerHTML+=sum;
